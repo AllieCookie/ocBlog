@@ -1,0 +1,16 @@
+<div [ngClass]="{'list-group-item': postLoveIts === 0,
+                  'list-group-item list-group-item-success': postLoveIts > 0,
+                  'list-group-item list-group-item-danger': postLoveIts < 0 }">
+  <h2 class="display-2">
+    {{ postTitle }}
+  </h2>
+  <blockquote class="blockquote text-right">
+    <p class="mb-9">{{ postCreated_at | date: 'short' }}</p>
+  </blockquote>
+  <p>{{postContent}}</p>
+
+  <button type="button" class="btn btn-success"
+    (click)=addLove()>Love it!</button>
+  <button type="button" class="btn btn-danger"
+    (click)=subLove()>Don't love it!</button>
+</div>

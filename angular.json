@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ocBlog"
+    }
+  },
+  "defaultProject": "ocBlog",
+  "cli": {
+    "analytics": "8c1efd3e-27ca-4e9e-ae74-9f61db77d230"
+  }
 }
